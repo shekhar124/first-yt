@@ -1,0 +1,38 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Popup Design - program like Incognato</title>
+</head>
+<body>
+    
+    <div class="container">
+
+
+        
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup"  id="popup">
+            <img src="404-tick.png">
+            <h2>SUCESS !</h2>
+            <p>Thank-you-for-submitting</p>
+            <button type="button" onclick="closePopup()">ok</button>
+        
+        </div>
+        
+
+    </div>
+    
+    <script>
+        let popup=document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+            
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+            
+        }
+
+    </script>
+</body>
+</html>
